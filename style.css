@@ -92,21 +92,20 @@ p {
 .item {
     height: 100px;
     width: 100px;
-    background-color: #f1f1f1ae;
+    background-color: #ffdbdbae;
     margin: 20px;
     display: inline-block;
     border-radius: 5px;
 }
-
+.item:hover{
+    background-color: rgb(247, 217, 221);
+    border: 1px solid tomato;
+    cursor:pointer;
+}
 .item h3 {
     font-weight: 600;
     color: #626262;
     margin: 35px auto;
-}
-
-.active {
-    background-color: rgb(247, 217, 221);
-    border: 2px solid tomato;
 }
 
 .donate-btn-container {
@@ -134,8 +133,10 @@ p {
 }
 
 .donate-btn:hover {
-    background-color: lightcoral;
+    background-color:rgb(255, 50, 81);
     cursor: pointer;
+    padding: 16px 35px;
+    transition:350ms;
 }
 
 /* --Donate Today Container area end */
@@ -193,6 +194,12 @@ p {
     margin-top: 40px;
     margin-left: 20px;
     border-radius:8px;
+
+}
+.donate-plan-item:hover {
+border:1px solid tomato;
+box-shadow:6px 6px 10px rgb(163, 163, 163);
+transition: 370ms;
 
 }
 
@@ -256,6 +263,17 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    
+}
+.image-card-1:hover{
+   
+    box-shadow:10px 10px 40px gray;
+    transition:400ms;
+}
+.image-card-2:hover{
+   
+    box-shadow:10px 10px 40px gray;
+    transition:400ms;
 }
 
 .image-card-2 {
@@ -288,6 +306,10 @@ p {
     margin: 5px auto;
 
 
+}
+.my-update-container:hover {
+box-shadow:1px 1px 40px rgb(186, 186, 186);
+transition: 0.8ms;
 }
 
 .form input[type=email] {
@@ -322,8 +344,10 @@ footer {
     text-align: center;
 
 }
-#submit{
+#submit:hover{
     cursor:pointer;
+    background-color:rgb(255, 50, 81);
+    transition: 1000ms;
 }
 footer h3 {
     color: #FF5959;
